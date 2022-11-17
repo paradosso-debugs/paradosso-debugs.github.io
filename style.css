@@ -1,0 +1,42 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: rgb(8, 102, 120);
+}
+
+
+.header {
+    background-color: rgb(7, 12, 1);
+    color: white;
+    display: flex;
+    justify-content: center;
+    margin: 4.0rem;
+    font-family: sans-serif;
+    font-weight: 600;
+    font-size: xx-large;
+}
+
+.container {
+    /* background-color: rgb(14, 79, 24); */
+}
+
+.button {
+    background-color: rgba(226, 12, 105, 0.729);
+    color: white;
+    margin: 4rem;
+    display: block;
+}
+
+.form {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin: 4rem;
+    color: white;
+    width: 700px;
+
+}
