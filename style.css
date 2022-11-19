@@ -10,7 +10,6 @@ body {
 
 
 .header {
-    background-color: rgb(7, 12, 1);
     color: white;
     display: flex;
     justify-content: center;
@@ -20,23 +19,96 @@ body {
     font-size: xx-large;
 }
 
+
 .container {
-    /* background-color: rgb(14, 79, 24); */
+    display: flex;
+    flex-direction: column;
+}
+
+.buttondiv {
+    display: flex;
+    justify-content: center;
+    margin: 4rem;
 }
 
 .button {
-    background-color: rgba(226, 12, 105, 0.729);
+    background-color: goldenrod;
+    border-radius: .4rem;
+    font-size: small;
     color: white;
-    margin: 4rem;
-    display: block;
+    cursor: pointer;
+    padding: .4rem;
 }
+
+.lista {
+    color: white;
+    display: flex;
+    justify-content: center;
+    padding-bottom: 40px;
+    font-family: sans-serif;
+
+}
+
+.mainTable {
+    border: 4px solid darkgoldenrod;
+    width: 100%;
+    color: white;
+    font-family: sans-serif;
+
+
+}
+
+.mainTable td {
+    color: black;
+    font-weight: bold;
+}
+
+.mainTable a {
+    color: rgb(0, 13, 255);
+    padding: 4px;
+    text-decoration: underline;
+    cursor: pointer;
+
+}
+
+td {
+    padding-left: 175px;
+
+}
+
 
 .form {
     display: flex;
     justify-content: center;
     flex-direction: column;
-    margin: 4rem;
     color: white;
-    width: 700px;
+    width: 600px;
+    margin: auto;
+    font-family: sans-serif;
 
+}
+
+@media (max-width: 450px) {
+    .header {
+        display: flex;
+        justify-content: center;
+    }
+
+    .form {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        color: white;
+        align-items: center;
+        padding-right: 150px;
+    }
+
+    .button {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        color: white;
+        align-items: center;
+
+    }
 }

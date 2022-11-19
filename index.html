@@ -12,15 +12,32 @@
 <body>
     <section class="header">Aplicación CRUD</section>
     <div class="container">
-        <form class="form">
-            <label for="tarea">Tarea:</label><br>
-            <input type="text" id="tarea" name="tarea"><br>
-            <label for="descripción">Descripción:</label><br>
-            <input type="text" id="descripción" name="descripción">
+        <form onsubmit="event.preventDefault(); onSubmitForm();" class="form">
+            <label for="task">Task:</label><br>
+            <input type="text" id="task" name="task"><br>
+            <label for="discription">Discription:</label><br>
+            <input type="text" id="discription" name="discription">
+            <div class="buttondiv">
+                <button class="button">Add Task</button>
+            </div>
         </form>
-        <button class="button">Agregar Tarea</button>
+        <div class="lista">
+            <h2>Lista</h2>
+        </div>
+        <td>
+            <table class="mainTable" id="taskList">
+                <tr>
+                    <th>Task</th>
+                    <th>Discription</th>
+                    <th>hi</th>
+                </tr>
+                <tbody>
+
+                </tbody>
+            </table>
+        </td>
         <footer>
-            <p>2022 All Rights Reserved.</p>
+            <p class="footer">2022 All Rights Reserved.</p>
         </footer>
     </div>
     <script src="index.js" type="text/javascript"></script>
