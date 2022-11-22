@@ -10,10 +10,11 @@
 </head>
 
 <body>
-    <section class="header">Aplicación CRUD</section>
+    <section class="header">CRUD Application</section>
     <div class="container">
         <form onsubmit="event.preventDefault(); onSubmitForm();" class="form">
-            <label for="task">Task:</label><br>
+            <label for="task">Task:</label><label class="classValidate hide" id="labelId">"Required fields cannot be
+                blank"</label><br>
             <input type="text" id="task" name="task"><br>
             <label for="discription">Discription:</label><br>
             <input type="text" id="discription" name="discription">
@@ -22,16 +23,16 @@
             </div>
         </form>
         <div class="lista">
-            <h2>Lista</h2>
+            <h2>List</h2>
         </div>
         <td>
             <table class="mainTable" id="taskList">
                 <tr>
                     <th>Task</th>
                     <th>Discription</th>
-                    <th>hi</th>
+                    <th></th>
                 </tr>
-                <tbody>
+                <tbody id="tbody">
 
                 </tbody>
             </table>
